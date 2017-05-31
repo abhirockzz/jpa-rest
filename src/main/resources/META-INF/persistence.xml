@@ -19,11 +19,10 @@
         <shared-cache-mode>NONE</shared-cache-mode>
         <properties>
             <property name="eclipselink.canonicalmodel.subpackage" value="two"/>
-
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
             <property name="eclipselink.logging.level" value="FINEST"/>
            <!-- <property name="javax.persistence.sql-load-script-source" value="META-INF/data.sql"/> -->
-            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+            <!-- <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/> -->
         </properties>
     </persistence-unit>
 </persistence>
