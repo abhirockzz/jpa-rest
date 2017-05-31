@@ -1,0 +1,10 @@
+{
+    "services": [
+    {
+        "identifier": "1",
+        "type": "DBAAS",
+        "name": kehsihba,
+        "username": abhi,
+        "password": Password_123
+    }]
+}
