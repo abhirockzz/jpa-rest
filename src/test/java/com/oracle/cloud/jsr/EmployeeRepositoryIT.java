@@ -27,9 +27,14 @@ public class EmployeeRepositoryIT {
     @BeforeClass
     public static void setUpClass() {
 
-        props.put("javax.persistence.jdbc.url", System.getenv().getOrDefault("DBCS_JDBC_URL", "jdbc:oracle:thin:@129.144.18.61:1521/PDB1.paasdemo015.oraclecloud.internal"));
-        props.put("javax.persistence.jdbc.user", System.getenv().getOrDefault("DBCS_USER", "abhi"));
-        props.put("javax.persistence.jdbc.password", System.getenv().getOrDefault("DBCS_PASSWORD", "Password_123"));
+//        props.put("javax.persistence.jdbc.url", System.getenv().getOrDefault("DBCS_JDBC_URL", "jdbc:oracle:thin:@129.144.18.61:1521/PDB1.paasdemo015.oraclecloud.internal"));
+//        props.put("javax.persistence.jdbc.user", System.getenv().getOrDefault("DBCS_USER", "abhi"));
+//        props.put("javax.persistence.jdbc.password", System.getenv().getOrDefault("DBCS_PASSWORD", "Password_123"));
+
+
+        props.put("javax.persistence.jdbc.url", System.getenv().getOrDefault("DBCS_JDBC_URL", "url"));
+        props.put("javax.persistence.jdbc.user", System.getenv().getOrDefault("DBCS_USER", "user"));
+        props.put("javax.persistence.jdbc.password", System.getenv().getOrDefault("DBCS_PASSWORD", "pwd"));
         
         JPAFacade.bootstrapEMF(PU_NAME, props);
 
