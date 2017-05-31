@@ -25,7 +25,7 @@
       	<exclude>*.zip</exclude>
 		<exclude></exclude>
 		<exclude>original*.jar</exclude>
-		exclude>*shaded.jar</exclude>
+		<exclude>*shaded.jar</exclude>
       </excludes>
      </fileSet>
   </fileSets>
