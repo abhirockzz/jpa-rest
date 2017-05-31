@@ -2,5 +2,5 @@
     "runtime": {
         "majorVersion": "8"
     },
-    "command": "java -jar acc-dbcs-devcs.jar",
+    "command": "java -jar dcs-dbcs-psm.jar",
 }

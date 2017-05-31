@@ -24,7 +24,7 @@
       <excludes>
       	<exclude>*.zip</exclude>
 		<exclude></exclude>
-		<exclude>*1.0.jar</exclude>
+		<exclude>original*.jar</exclude>
       </excludes>
      </fileSet>
   </fileSets>

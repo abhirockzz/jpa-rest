@@ -20,6 +20,8 @@ public class EmployeesResource {
     @GET
     @Path("{id}")
     public Response fetchById(@PathParam("id") String id) {
+        
+        System.out.println("Searching for employee with ID "+ id);
 
         EntityManager em = null;
         Employee emp = null;
@@ -41,6 +43,8 @@ public class EmployeesResource {
     
     @GET
     public Response all() {
+        
+        System.out.println("Listing all employees......");
 
         EntityManager em = null;
         List<Employee> employees = null;
