@@ -20,7 +20,7 @@ public class JPAFacade {
     }
 
     public static void bootstrapEMF(String persistenceUnitName, Map<String, String> props) {
-        if (emf == null) {
+        if (emf == null || !emf.isOpen()) {
             emf = Persistence.createEntityManagerFactory(persistenceUnitName, props);
             emf.createEntityManager().close(); //a hack to initiate 'eager' deployment of persistence unit during deploy time as opposed to on-demand
         }
@@ -41,7 +41,6 @@ public class JPAFacade {
         }
 
         emf.close();
-
     }
 
 }

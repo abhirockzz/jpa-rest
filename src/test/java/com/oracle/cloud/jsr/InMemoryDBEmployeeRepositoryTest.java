@@ -13,29 +13,18 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author agupgupt
- */
-public class EmployeeRepositoryIT {
 
-    public EmployeeRepositoryIT() {
+public class InMemoryDBEmployeeRepositoryTest {
+
+    public InMemoryDBEmployeeRepositoryTest() {
     }
     static Map<String, String> props = new HashMap<>();
-    final static String PU_NAME = "dbcs-pu";
+    final static String PU_NAME = "derby-in-memory-PU";
 
     @BeforeClass
     public static void setUpClass() {
 
-//        props.put("javax.persistence.jdbc.url", System.getenv().getOrDefault("DBCS_JDBC_URL", "jdbc:oracle:thin:@129.144.18.61:1521/PDB1.paasdemo015.oraclecloud.internal"));
-//        props.put("javax.persistence.jdbc.user", System.getenv().getOrDefault("DBCS_USER", "abhi"));
-//        props.put("javax.persistence.jdbc.password", System.getenv().getOrDefault("DBCS_PASSWORD", "Password_123"));
-
-
-        props.put("javax.persistence.jdbc.url", System.getenv().getOrDefault("DBCS_JDBC_URL", "url"));
-        props.put("javax.persistence.jdbc.user", System.getenv().getOrDefault("DBCS_USER", "user"));
-        props.put("javax.persistence.jdbc.password", System.getenv().getOrDefault("DBCS_PASSWORD", "pwd"));
-        
+        props.put("javax.persistence.jdbc.url", "jdbc:derby:target/derbydb;create=true");
         JPAFacade.bootstrapEMF(PU_NAME, props);
 
     }
