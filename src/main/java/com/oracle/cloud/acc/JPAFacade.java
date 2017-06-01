@@ -1,17 +1,10 @@
-package com.oracle.cloud.jsr.jpa;
+package com.oracle.cloud.acc;
 
 import java.util.Map;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-/**
- * Creates a 'global' (we're just handling a single persistence unit) instance
- * of Entity Manager Factory and provides access to the Entity Manager. This is
- * fine, since EMF is thread-safe (but EM is not)
- *
- * @author Abhishek
- */
 public class JPAFacade {
 
     private static EntityManagerFactory emf;

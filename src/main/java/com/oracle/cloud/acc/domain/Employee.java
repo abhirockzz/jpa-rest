@@ -1,4 +1,4 @@
-package com.oracle.cloud.jsr.jpa.entities;
+package com.oracle.cloud.acc.domain;
 
 import java.io.Serializable;
 import javax.persistence.Basic;
@@ -8,13 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- *
- * Model class for JPA. The JAXB annotations aid in XML marshaling. Thanks to
- * Eclipselink Moxy, instances of this class can be marshaled to JSON based on
- * the JAXB metadata
- *
- */
 @Entity
 @Table(name = "EMPLOYEES")
 @XmlRootElement

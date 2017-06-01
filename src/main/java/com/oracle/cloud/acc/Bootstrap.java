@@ -1,4 +1,4 @@
-package com.oracle.cloud.jsr.jpa;
+package com.oracle.cloud.acc;
 
 import java.io.IOException;
 import java.net.URI;
@@ -7,16 +7,13 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.ws.rs.core.UriBuilder;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.moxy.json.MoxyJsonFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 
-/**
- * The 'bootstrap' class. Sets up persistence and starts Grizzly HTTP server
- *
- */
 public class Bootstrap {
 
     static void bootstrapREST() throws IOException {

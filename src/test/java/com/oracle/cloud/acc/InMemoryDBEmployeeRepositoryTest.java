@@ -1,8 +1,6 @@
-package com.oracle.cloud.jsr;
+package com.oracle.cloud.acc;
 
-import com.oracle.cloud.jsr.jpa.EmployeeRepository;
-import com.oracle.cloud.jsr.jpa.JPAFacade;
-import com.oracle.cloud.jsr.jpa.entities.Employee;
+import com.oracle.cloud.acc.domain.Employee;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,7 +10,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-
 
 public class InMemoryDBEmployeeRepositoryTest {
 
