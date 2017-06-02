@@ -5,8 +5,8 @@
     {
       "name": "kehsihba",
       "type": "DBAAS",
-	  "username": abhi,
-      "password": Password_123
+	  "username": "abhi",
+      "password": "Password_123"
     }
   ]
 }
