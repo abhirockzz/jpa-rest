@@ -1,10 +1,12 @@
 {
-    "services": [
+  "memory": "1G",
+  "instances": 1,
+  "services": [
     {
-        "identifier": "1",
-        "type": "DBAAS",
-        "name": kehsihba,
-        "username": abhi,
-        "password": Password_123
-    }]
+      "name": "kehsihba",
+      "type": "DBAAS",
+	  "username": abhi,
+      "password": Password_123
+    }
+  ]
 }
