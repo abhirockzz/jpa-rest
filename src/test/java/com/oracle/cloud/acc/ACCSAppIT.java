@@ -23,7 +23,7 @@ public class ACCSAppIT {
 
     @BeforeClass
     public static void setUpClass() {
-        accsAppBaseURL = System.getenv().getOrDefault("ACCS_APP_BASE_URL", "https://acc-dbcs-jpa-rest-paasdemo015.apaas.us6.oraclecloud.com");
+        accsAppBaseURL = System.getenv().get("ACCS_APP_BASE_URL");
         System.out.println("Base REST URL "+ accsAppBaseURL);
     }
 
